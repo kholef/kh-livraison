@@ -8,15 +8,9 @@ Site web moderne de service de livraison avec gestion complète des livraisons.
 - Interface moderne et épurée
 - Animations fluides
 - Responsive design optimisé
-- Typographie distinctive (Outfit + DM Sans)
+- Typographie distinctive 
 
-### Fonctionnalités
-- ✅ Page d'authentification dédiée (connexion/inscription)
-- ✅ Dashboard de gestion des livraisons (CRUD complet)
-- ✅ Page de contact simplifiée
-- ✅ Système de statuts des livraisons
-- ✅ Filtres et recherche
-- ✅ Statistiques en temps réel
+
 
 ## 📁 STRUCTURE
 
@@ -87,26 +81,6 @@ http://localhost/kh_livraison_v2/index.html
 - Par service (repas, colis, pro)
 - Par recherche (adresse, ville, code)
 
-## 🎨 PERSONNALISATION
-
-### Couleurs (dans style.css)
-```css
-:root {
-    --primary: #FF3B30;      /* Rouge principal */
-    --secondary: #1A1A1A;    /* Noir */
-    --accent: #FFD60A;       /* Jaune */
-}
-```
-
-### Images requises
-Ajoutez dans `/images/` :
-- logo (2).png
-- image-accueil.png
-- photo-about.jpg
-- service-1.jpg
-- service-2.jpg
-- service-3.png
-- Designer.png
 
 ## 🔒 SÉCURITÉ
 
@@ -116,12 +90,6 @@ Ajoutez dans `/images/` :
 - Validation serveur
 - Sessions sécurisées
 
-## 📞 COMPTE TEST
-
-```
-Email: jean.dupont@test.fr
-Mot de passe: test123
-```
 
 ## 🎯 PAGES
 
@@ -130,23 +98,3 @@ Mot de passe: test123
 - **/livraisons.html** - Dashboard livraisons
 - **/contact.html** - Formulaire contact
 
-## 💡 CONSEILS
-
-- Toujours tester en `http://localhost/...`
-- Vérifier que Apache et MySQL sont démarrés
-- Consulter la console (F12) en cas d'erreur
-- Vérifier les permissions des dossiers
-
-## ✅ CHECKLIST
-
-- [ ] XAMPP installé et démarré
-- [ ] Base de données importée
-- [ ] Images ajoutées
-- [ ] Site accessible
-- [ ] Connexion fonctionnelle
-- [ ] CRUD livraisons opérationnel
-
----
-
-**Version 2.0 - Mars 2025**
-**KH Livraison - Service professionnel**
