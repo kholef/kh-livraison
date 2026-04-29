@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - KH Livraison</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- Navigation Simple -->
+    <nav class="navbar simple">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo (2).png" alt="KH Livraison">
+                <span>KH LIVRAISON</span>
+            </a>
+            <a href="index.html" class="btn-back">← Retour à l'accueil</a>
+        </div>
+    </nav>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Left Side - Form -->
+            <div class="auth-form-section">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Connexion</button>
+                    <button class="auth-tab" data-tab="register">Inscription</button>
+                </div>
+
+                <!-- Login Form -->
+                <div class="auth-form active" id="login-form">
+                    <h2 class="auth-title">Bon retour !</h2>
+                    <p class="auth-subtitle">Connectez-vous pour accéder à vos livraisons</p>
+
+                    <form id="loginForm" class="form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input 
+                                type="email" 
+                                id="login-email" 
+                                name="email" 
+                                placeholder="votre@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Mot de passe</label>
+                            <input 
+                                type="password" 
+                                id="login-password" 
+                                name="password" 
+                                placeholder="••••••••"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="remember">
+                                <span>Se souvenir de moi</span>
+                            </label>
+                            <a href="#" class="link-forgot">Mot de passe oublié ?</a>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Se connecter
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Register Form -->
+                <div class="auth-form" id="register-form">
+                    <h2 class="auth-title">Créer un compte</h2>
+                    <p class="auth-subtitle">Commencez à utiliser KH Livraison</p>
+
+                    <form id="registerForm" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="register-nom">Nom</label>
+                                <input 
+                                    type="text" 
+                                    id="register-nom" 
+                                    name="nom" 
+                                    placeholder="Dupont"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-prenom">Prénom</label>
+                                <input 
+                                    type="text" 
+                                    id="register-prenom" 
+                                    name="prenom" 
+                                    placeholder="Jean"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input 
+                                type="email" 
+                                id="register-email" 
+                                name="email" 
+                                placeholder="votre@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="register-telephone">Téléphone</label>
+                            <input 
+                                type="tel" 
+                                id="register-telephone" 
+                                name="telephone" 
+                                placeholder="06 12 34 56 78"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="register-password">Mot de passe</label>
+                            <input 
+                                type="password" 
+                                id="register-password" 
+                                name="password" 
+                                placeholder="••••••••"
+                                required
+                            >
+                            <span class="form-hint">Minimum 6 caractères</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="register-password-confirm">Confirmer le mot de passe</label>
+                            <input 
+                                type="password" 
+                                id="register-password-confirm" 
+                                name="password_confirm" 
+                                placeholder="••••••••"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span>J'accepte les <a href="#" class="link-inline">conditions d'utilisation</a></span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Créer mon compte
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Side - Benefits -->
+            <div class="auth-benefits-section">
+                <div class="benefits-content">
+                    <div class="benefits-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 32l8 8 12-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="benefits-title">Pourquoi créer un compte ?</h3>
+                    
+                    <ul class="benefits-list">
+                        <li class="benefit-item">
+                            <div class="benefit-icon">🚀</div>
+                            <div class="benefit-text">
+                                <strong>Commandes rapides</strong>
+                                <p>Vos informations enregistrées pour commander en 1 clic</p>
+                            </div>
+                        </li>
+                        
+                        <li class="benefit-item">
+                            <div class="benefit-icon">📦</div>
+                            <div class="benefit-text">
+                                <strong>Suivi en direct</strong>
+                                <p>Suivez toutes vos livraisons en temps réel sur votre dashboard</p>
+                            </div>
+                        </li>
+                        
+                        <li class="benefit-item">
+                            <div class="benefit-icon">⭐</div>
+                            <div class="benefit-text">
+                                <strong>Offres exclusives</strong>
+                                <p>Recevez des promotions et réductions personnalisées</p>
+                            </div>
+                        </li>
+                        
+                        <li class="benefit-item">
+                            <div class="benefit-icon">📊</div>
+                            <div class="benefit-text">
+                                <strong>Historique complet</strong>
+                                <p>Accédez à l'historique de toutes vos commandes passées</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="benefits-stats">
+                        <div class="benefit-stat">
+                            <div class="stat-value">500+</div>
+                            <div class="stat-label">Clients satisfaits</div>
+                        </div>
+                        <div class="benefit-stat">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">Taux de satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

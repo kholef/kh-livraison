@@ -1,0 +1,29 @@
+# KH LIVRAISON - Configuration Apache
+RewriteEngine On
+
+# Protection fichiers sensibles
+<FilesMatch "^(config)\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Pages d'erreur
+ErrorDocument 404 /kh_livraison_v2/index.html
+
+# Sécurité
+Options -Indexes
+
+# Headers de sécurité
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# UTF-8
+AddDefaultCharset UTF-8
+
+# Compression Gzip
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>

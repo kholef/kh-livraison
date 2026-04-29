@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KH Livraison - Service de Livraison Rapide et Fiable</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo (2).png" alt="KH Livraison">
+                <span>KH LIVRAISON</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#apropos" class="nav-link">À propos</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="livraisons.html" class="nav-link">Mes Livraisons</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="auth.html" class="btn-login">Connexion</a>
+                <a href="auth.html" class="btn-primary">Inscription</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Livraison Express en 2h</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Livraison <span class="title-highlight">Rapide</span><br>
+                    Service <span class="title-highlight">Fiable</span>
+                </h1>
+                
+                <p class="hero-description">
+                    KH Livraison vous offre un service de livraison express disponible 7j/7. 
+                    Vos colis et repas livrés en toute sécurité, avec suivi en temps réel.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="auth.html" class="btn-hero-primary">
+                        Commander maintenant
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#services" class="btn-hero-secondary">
+                        Découvrir nos services
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Livraisons/mois</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">2h</div>
+                        <div class="stat-label">Délai moyen</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <img src="images/image-accueil.png" alt="Livraison KH">
+                    <div class="visual-badge">
+                        <span class="pulse"></span>
+                        <span>En direct</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nos Services</span>
+                <h2 class="section-title">Une solution pour chaque besoin</h2>
+                <p class="section-subtitle">
+                    Trois services de livraison adaptés à vos besoins quotidiens
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="1">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 8v8l4 4M28 16c0 6.627-5.373 12-12 12S4 22.627 4 16 9.373 4 16 4s12 5.373 12 12z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Livraison de Repas</h3>
+                    <p class="service-description">
+                        Vos plats préférés livrés chauds et à temps. Partenariat avec les meilleurs restaurants de la ville.
+                    </p>
+                    <ul class="service-features">
+                        <li>Livraison en 30min</li>
+                        <li>Suivi en temps réel</li>
+                        <li>100+ restaurants</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">4,99€</span>
+                        <span class="price-label">par livraison</span>
+                    </div>
+                    <a href="auth.html" class="btn-service">Commander</a>
+                </div>
+                
+                <div class="service-card featured" data-service="2">
+                    <div class="featured-badge">Populaire</div>
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 8h24M4 16h24M4 24h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Colis Express</h3>
+                    <p class="service-description">
+                        Envoi rapide et sécurisé de vos colis avec assurance incluse et signature à la livraison.
+                    </p>
+                    <ul class="service-features">
+                        <li>Livraison sous 2h</li>
+                        <li>Assurance gratuite</li>
+                        <li>Photo de dépôt</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">8,99€</span>
+                        <span class="price-label">par colis</span>
+                    </div>
+                    <a href="auth.html" class="btn-service">Commander</a>
+                </div>
+                
+                <div class="service-card" data-service="3">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 16h16M16 8v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Solution Pro</h3>
+                    <p class="service-description">
+                        Service dédié aux restaurants et professionnels. Tarifs dégressifs et livreur attitré.
+                    </p>
+                    <ul class="service-features">
+                        <li>Tarifs pros</li>
+                        <li>Livreur dédié</li>
+                        <li>Factures mensuelles</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">12,99€</span>
+                        <span class="price-label">par livraison</span>
+                    </div>
+                    <a href="auth.html" class="btn-service">Commander</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/photo-about.jpg" alt="ACHOUR Kholef">
+                    <div class="about-decoration"></div>
+                </div>
+                
+                <div class="about-content">
+                    <span class="section-badge">À propos</span>
+                    <h2 class="section-title">Une passion pour le service</h2>
+                    
+                    <div class="about-text">
+                        <p>
+                            Je m'appelle <strong>ACHOUR Kholef</strong>, fondateur de KH Livraison. 
+                            Passionné par le service client et l'efficacité, j'ai créé cette entreprise 
+                            pour répondre à un besoin simple : des livraisons rapides et fiables.
+                        </p>
+                        <p>
+                            Mon engagement : vous offrir un service de qualité, transparent et humain. 
+                            Chaque livraison est traitée avec le même soin, qu'il s'agisse d'un repas 
+                            ou d'un colis urgent.
+                        </p>
+                    </div>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <div class="value-text">
+                                <h4>Engagement</h4>
+                                <p>Respect des délais garantis</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">💼</div>
+                            <div class="value-text">
+                                <h4>Professionnalisme</h4>
+                                <p>Service client réactif 7j/7</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🔒</div>
+                            <div class="value-text">
+                                <h4>Sécurité</h4>
+                                <p>Vos colis assurés et suivis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-badge">Pourquoi nous choisir</span>
+                <h2 class="section-title">L'excellence à chaque livraison</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">⚡</div>
+                    </div>
+                    <h3>Rapidité</h3>
+                    <p>Livraison express en moins de 2h dans toute la région</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🔒</div>
+                    </div>
+                    <h3>Sécurité</h3>
+                    <p>Assurance tous risques et suivi GPS en temps réel</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">📱</div>
+                    </div>
+                    <h3>Suivi Live</h3>
+                    <p>Suivez votre livraison minute par minute sur l'app</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">⭐</div>
+                    </div>
+                    <h3>Support 7j/7</h3>
+                    <p>Équipe disponible tous les jours pour vous assister</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt à commander ?</h2>
+                <p class="cta-description">
+                    Créez votre compte gratuitement et bénéficiez de votre première livraison à -50%
+                </p>
+                <a href="auth.html" class="btn-cta">
+                    Créer mon compte
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo (2).png" alt="KH Livraison">
+                        <span>KH LIVRAISON</span>
+                    </div>
+                    <p class="footer-description">
+                        Service de livraison rapide et fiable pour tous vos besoins quotidiens.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="auth.html">Livraison repas</a></li>
+                        <li><a href="auth.html">Colis express</a></li>
+                        <li><a href="auth.html">Solution pro</a></li>
+                        <li><a href="livraisons.html">Mes livraisons</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📍 123 Rue de la Livraison<br>75000 Paris</li>
+                        <li>📞 01 55 28 07 49</li>
+                        <li>✉️ contact@khlivraison.fr</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KH Livraison. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
